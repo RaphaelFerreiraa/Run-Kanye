@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+
+.game{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    background-image: url('/IMG/Backgound/wp8266396-pixel-city-wallpapers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inimigo{
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    animation: toma 2s infinite linear ;
+}
+
+.player{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.pulo{
+    animation: pulo 500ms ease-out;
+}
+
+@keyframes toma {
+    from{
+        right: -0;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes pulo {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+
+
+}
+
+h1, h2{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+strong{
+    color: red;
+}
